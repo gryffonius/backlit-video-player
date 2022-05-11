@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+html {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background: rgb(20, 20, 20);
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 100pt;
+    color: aliceblue;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    overflow: visible;
+}
+
+.c-video {
+    position: relative;
+    width: 700px;
+    z-index: 1;
+    /* visibility: hidden; */
+}
+
+#video {
+    width: 100%;
+}
+
+.c-backlight {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    top: -30px;
+    transform: translate(-50%);
+    z-index: 0;
+    filter: blur(50px);
+}
+
+#backlight {
+    width: 100%;
+    aspect-ratio: 16/9;
+    z-index: 1;
+}
