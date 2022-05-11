@@ -13,11 +13,20 @@
     <body>
         <h1>Backlit Video Player</h1>
         <div class="container">
-            <div class="c-video">
+            <div class="slider-container">
+                <h3>Volume</h3>
+                <input type="range" min="0" max="100" value="70" id="volume-slider" class="slider">
+                <span id="volume-range-value"></span>
+            </div>
+            <div class="video-container">
                 <video id="video" controls>
                     <source src="./video/psychedelic.mp4" type="video/mp4">
                 </video>
-                
+            </div>
+            <div class="slider-container">
+                <h3>Effect</h3>
+                <input type="range" min="0" max="100" value="70" id="effect-slider" class="slider">
+                <span id="effect-range-value"></span>
             </div>
             <div class="c-backlight">
                 <canvas id="backlight"></canvas>
