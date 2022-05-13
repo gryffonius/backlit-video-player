@@ -32,3 +32,11 @@ video.volume = .7
 volumeSlider.addEventListener("input", (e) => {
   video.volume = e.target.value/100
 })
+
+video.addEventListener("click", () => {
+  if (video.paused) {
+    video.play()
+  } else {
+    video.pause()
+  }
+})
